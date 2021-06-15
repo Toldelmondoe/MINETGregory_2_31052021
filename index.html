@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link re1="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Reservia</title>
 </head>
 <body>
     <header>
-        <div>
-            Logo
+        <div class="entete">
+            <img class="logo" src="images\logo\Reservia@3x.png" alt="logo de Reservia" />
             <nav>
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <li><a href="#ancrehebergements">Hébergements</a></li>
+                    <li><a href="#ancreactivites">Activités</a></li>
+                    <li><a class="login" href="#"><strong>S'inscrire</strong></a></li>
                 </ul>
             </nav>
         </div>
@@ -24,6 +24,9 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div></div> <!--Bouton Recherche-->
+
+            <!--les filtres-->
+
             <div><h3>Filtres</h3>
                 <ul>
                     <li>Economique</li>
@@ -37,7 +40,10 @@
     </header>
    
     <main>
-        <section><!--Hébergements à marseille et Les plus populaires-->
+
+        <!--Hébergements à marseille et Les plus populaires-->        
+
+        <section class="hebpop" id="ancrehebergements">
             <div><h2>Hébergements à Marseille</h2>
                 <div>
                     <div><h3>Auberge la Cannebière</h3></div>
@@ -57,7 +63,10 @@
             </div>
         </section>
         
-        <section><h2>Activités à Marseille</h2>
+        <!--Les activités-->
+
+        <section class="act" id="ancreactivites">
+            <h2>Activités à Marseille</h2>
             <div>
                 <div><h3>Vieux Port</h3></div>
                 <div>
