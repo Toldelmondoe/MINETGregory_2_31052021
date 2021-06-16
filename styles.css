@@ -40,3 +40,15 @@ h2 h3 {
 ul {
     list-style: none;
 }
+
+#money, #child, #heart, #dog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    height: 3rem;
+    width: 3rem
+}
+

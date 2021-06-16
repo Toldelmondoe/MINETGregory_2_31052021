@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Icons from Font Awesome-->
+    <script src="https://kit.fontawesome.com/0943c6738e.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
 <body>
@@ -29,12 +31,12 @@
 
             <!--les filtres-->
 
-            <div><h3>Filtres</h3>
+            <div class="filtres"><h3>Filtres</h3>
                 <ul>
-                    <li><i class="fas fa-money-bill-wave"></i>Economique</li>
-                    <li><i class="fas fa-child"></i>Familial</li>
-                    <li><i class="fas fa-heart"></i>Romantique</li>
-                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
+                    <li><i id="money" class="fas fa-money-bill-wave"></i>Economique</li>
+                    <li><i id="child" class="fas fa-child"></i>Familial</li>
+                    <li><i id="heart" class="fas fa-heart"></i>Romantique</li>
+                    <li><i id="dog" class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
             </div>
             <div>
@@ -48,7 +50,7 @@
 
         <!--Hébergements à marseille et Les plus populaires-->        
 
-        <section class="hebpop" id="ancrehebergements">
+        <section class="hebergementpopulaire" id="ancrehebergements">
             <div><h2>Hébergements à Marseille</h2>
                 <div>
                     <div><h3>Auberge la Cannebière</h3>
@@ -91,7 +93,7 @@
         
         <!--Les activités-->
 
-        <section class="act" id="ancreactivites">
+        <section class="activite" id="ancreactivites">
             <h2>Activités à Marseille</h2>
             <div>
                 <div><h3>Vieux Port</h3></div>
