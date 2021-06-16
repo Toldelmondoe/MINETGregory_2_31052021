@@ -36,3 +36,7 @@ h2 h3 {
 .prix {
     font-weight: bold;
 }
+
+ul {
+    list-style: none;
+}
