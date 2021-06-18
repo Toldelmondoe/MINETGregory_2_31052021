@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @font-face {
     font-family: 'raleway';
     src: url('fonts/Raleway-Black.ttf');
@@ -24,22 +26,65 @@
     font-family: 'raleway';
 }
 
-.logo {
-    height: 50px;
-    margin-top: 30px;
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.decorationNone {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 h2 h3 {
     font-weight: bold;
 }
 
-.prix {
-    font-weight: bold;
+/* NAV */
+
+.sizeLiens {
+    width: 45%;
 }
 
-ul {
-    list-style: none;
+.sizeLien {
+    width: 140px;
+    height: 99px;
 }
+
+.colorLink13 {
+    color: #0065FC;
+}
+.colorLink2 {
+    color: black;
+}
+
+.bordureNAV {
+    border-top: 2px solid #0065FC;
+    width: 150px;
+}
+
+.logo {
+    height: 50px;
+    margin-top: 25px;
+}
+
+/*Filtres*/
 
 #money, #child, #heart, #dog {
     display: flex;
@@ -52,3 +97,28 @@ ul {
     width: 3rem
 }
 
+/*Main*/
+
+.prix {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+.footerGrey {
+    background-color: #F2F2F2;
+    height: 218px;
+    margin-top: 100px;
+}
+
+.sizeBlocFooter {
+    height: 115px;
+}
+
+.margeLeft {
+    margin-left: 52px;
+}
+
+.margeRight {
+    margin-right: 368px;
+}
