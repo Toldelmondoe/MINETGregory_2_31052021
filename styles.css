@@ -102,6 +102,35 @@ h2 h3 {
     margin-left: -3px;
 }
 
+.list:hover > .filtreTexte {
+    color: #0065FC;
+}
+
+.list:hover > #money {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list:hover > #child {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list:hover > #heart {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list:hover > #dog {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+
 /*Main*/
 
 .prix {
