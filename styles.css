@@ -29,6 +29,10 @@ ul {
     list-style: none;
 }
 
+li {
+    list-style: none;
+}
+
 h2 h3 {
     font-weight: bold;
 }
@@ -37,7 +41,16 @@ h2 h3 {
     margin-left: 50px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /* NAV */
+
+.logo {
+    height: 50px;
+    margin-top: 25px;
+}
 
 .sizeLiens {
     width: 45%;
@@ -56,14 +69,25 @@ h2 h3 {
 }
 
 .bordureNAV {
-    border-top: 2px solid #0065FC;
-    width: 160px;
+    border-top: 2px solid transparent; 
 }
 
-.logo {
-    height: 50px;
-    margin-top: 25px;
+.bordureNAV:hover {
+    border-top: 2px solid #0065FC;
 }
+
+.bordureNAV:hover > a {
+    color: #0065FC;
+}
+
+.scaleLogin {
+    transform: scale(1.5) transparent;
+}
+.scaleLogin:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
 
 /*Filtres*/
 
@@ -75,19 +99,51 @@ h2 h3 {
 
 .filtre {
     display: flex;
+    margin-left: -3px;
 }
 
-.list {
+.list1 {
     display: flex;
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     margin-right: 24px;
+    height: 49px;
+    width: 190px; 
+}
+
+.list2 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px; 
+    margin-right: 24px;
     height: 49px; 
+    width: 150px;
+}
+
+.list3 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 24px;   
+    height: 49px;
+    width: 180px; 
+}
+
+.list4 {
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    margin-right: 24px;  
+    height: 49px; 
+    width: 240px; 
 }
 
 .espfiltre {
-    margin: 20px 20px 16px 13px;
+    padding-left: 20px;
 }
 
 #money, #child, #heart, #dog {
@@ -102,33 +158,47 @@ h2 h3 {
     margin-left: -3px;
 }
 
-.list:hover > .filtreTexte {
+.list1:hover {
     color: #0065FC;
+    background-color: #F2F2F2;
 }
 
-.list:hover > #money {
+.list2:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list3:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list4:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list1:hover > #money {
     color: #DEEBFF;
     background-color: #0065FC;
 }
 
-.list:hover > #child {
+.list2:hover > #child {
     color: #DEEBFF;
     background-color: #0065FC;
 }
 
-.list:hover > #heart {
+.list3:hover > #heart {
     color: #DEEBFF;
     background-color: #0065FC;
 }
 
-.list:hover > #dog {
+.list4:hover > #dog {
     color: #DEEBFF;
     background-color: #0065FC;
 }
 
-.pointer {
-    cursor: pointer;
-}
+
 
 
 /*Main*/
