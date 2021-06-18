@@ -33,6 +33,10 @@ h2 h3 {
     font-weight: bold;
 }
 
+.margeLeft {
+    margin-left: 50px;
+}
+
 /* NAV */
 
 .sizeLiens {
@@ -94,7 +98,8 @@ h2 h3 {
     background-color: #DEEBFF;
     border-radius: 100%;
     height: 3.3rem;
-    width: 3.3rem
+    width: 3.3rem;
+    margin-left: -3px;
 }
 
 /*Main*/
@@ -115,10 +120,6 @@ h2 h3 {
     height: 115px;
 }
 
-.margeLeft {
-    margin-left: 50px;
-}
-
-.margeRight {
+.margeRightFooter {
     margin-right: 368px;
 }
