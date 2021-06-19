@@ -200,12 +200,20 @@ h2 h3 {
 
 
 
-
-/*Main*/
-
+/*Hébergements*/
 .prix {
     font-weight: bold;
 }
+
+.bluestars {
+    color: #0065FC;
+}
+
+.greystars {
+    color: #d1cfcf;
+}
+
+/*Populaire*/
 
 /*Footer*/
 
