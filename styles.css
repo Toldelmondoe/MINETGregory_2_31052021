@@ -20,14 +20,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(162, 120, 216);
+    background-color: rgb(235, 217, 217);
 }
 
 main {
     height: 1540px;
     max-width: 1440px;
     margin: 0 auto 0 auto;
-    background-color: rgb(133, 162, 189);
+    background-color: rgb(172, 197, 201);
     position: relative;
 }
 
@@ -143,7 +143,6 @@ a {
 
 .filtre {
     display: flex;
-    margin-left: -3px;
 }
 
 .list1 {
@@ -152,8 +151,8 @@ a {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     margin-right: 24px;
-    height: 49px;
-    width: 190px; 
+    height: 46px;
+    width: 194px; 
 }
 
 .list2 {
@@ -162,8 +161,8 @@ a {
     border: 2px solid #F2F2F2;
     border-radius: 25px; 
     margin-right: 24px;
-    height: 49px; 
-    width: 150px;
+    height: 46px; 
+    width: 152px;
 }
 
 .list3 {
@@ -172,8 +171,8 @@ a {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     margin-right: 24px;   
-    height: 49px;
-    width: 180px; 
+    height: 46px;
+    width: 184px; 
 }
 
 .list4 {
@@ -182,12 +181,12 @@ a {
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     margin-right: 24px;  
-    height: 49px; 
-    width: 240px; 
+    height: 46px; 
+    width: 242px; 
 }
 
 .espfiltre {
-    padding-left: 20px;
+    padding-left: 13px;
     font-size: 1.15em;
     font-weight: 900;
 }
@@ -199,8 +198,8 @@ a {
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    height: 3.3rem;
-    width: 3.3rem;
+    height: 3.1rem;
+    width: 3.1rem;
     margin-left: -3px;
 }
 
