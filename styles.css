@@ -15,7 +15,7 @@ body {
 header {
     position: relative;
     max-width: 1440px;
-    height: 82px;
+    height: 89px;
     margin: 0 auto 0 auto;
     display: flex;
     align-items: center;
@@ -24,8 +24,8 @@ header {
 }
 
 main {
-    height: 1540px;
     max-width: 1440px;
+    height: 1577px;
     margin: 0 auto 0 auto;
     background-color: rgb(172, 197, 201);
     position: relative;
@@ -34,17 +34,9 @@ main {
 footer {
     margin: 0 auto 0 auto;
     width: 100%;
-    height: 220px;
+    height: 218px;
     display: flex;
     justify-content: center;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    list-style: none;
 }
 
 h2 h3 {
@@ -61,8 +53,8 @@ h2 h3 {
 }
 
 #logo img {
-    padding-top: 57px;
-    margin-left: 54px;
+    padding-top: 48px;
+    margin-left: 55px;
     height: 46px;
     cursor: pointer;
 }
@@ -143,6 +135,7 @@ a {
 
 .filtre {
     display: flex;
+    padding-left: 34px;
 }
 
 .list1 {
@@ -246,6 +239,102 @@ a {
 
 
 /*Hébergements*/
+
+#leshébergements {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hébergements {
+    height: 625px;
+    width: 65%;
+}
+
+.bloccartehébergement {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.carteligne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carte {
+    height: 200px;
+    width: 31%;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte img {
+    display: block;
+    object-fit: cover;
+    height: 110px;
+}
+
+.zonetexte {
+    background-color: white;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+#hébergements aside {
+    height: 625px;
+    width: 31.6%;
+}
+
+/*Populaire*/
+
+.bloccartepopulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 491px;
+    width: 100%;
+}
+
+.cartecolonne {
+    position: relative;
+    width: 100%;
+    height: 145px;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.cartecolonne img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 36%;
+}
+
+.zonetexte2 {
+    padding: 0px 7% 0px 7%;
+    width: 62%;
+    overflow: hidden;
+}
+
+.starspop {
+    position: absolute;
+    bottom: 10px;
+}
+
 .prix {
     font-weight: bold;
 }
@@ -258,7 +347,94 @@ a {
     color: #d1cfcf;
 }
 
-/*Populaire*/
+/*Activités*/
+
+#lesactivités {
+    height: 600px;
+    max-width: 1440px;
+    background-color: rgb(146, 92, 92);
+}
+
+#lesactivités img {
+    border-radius: 20px 20px 0 0;
+}
+
+.blocactivités {
+    width: 100%;
+    height: 446px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocactivités1 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.blocactivités2 {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.colonne {
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+}
+
+.colonne, .colonne2, .colonne3, .colonne4, .Fort, .Iles, .dame, .parc {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.colonne2, .colonne4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.colonne, .colonne2, .colonne3, .colonne4 {
+    width: 50%;
+}
+
+.Fort, .parc {
+    height: 235px;
+}
+
+.Iles, .dame {
+    height: 165px
+}
+
+.colonne img, .colonne2 img, .colonne3 img, .colonne4 img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 391px;
+}
+
+.Fort img, .parc img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 180px;
+}
+
+.Iles img, .dame img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 110px;
+}
+
+.titreactivité {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border-radius: 0 0 20px 20px;
+}
 
 /*Footer*/
 
