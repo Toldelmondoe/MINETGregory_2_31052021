@@ -27,7 +27,7 @@ main {
     max-width: 1440px;
     height: 1577px;
     margin: 0 auto 0 auto;
-    background-color: rgb(172, 197, 201);
+    background-color: white;
     position: relative;
 }
 
@@ -122,6 +122,28 @@ a {
     transition: transform 0.5s;
 }
 
+/*info*/
+
+#info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.fa-info {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    color: #0065FC;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+}
 
 /*Filtres*/
 
@@ -243,11 +265,16 @@ a {
 #leshébergements {
     display: flex;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 #hébergements {
     height: 625px;
-    width: 65%;
+    width: 878px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 50px;
+    padding: 0 40px 0 40px;
 }
 
 .bloccartehébergement {
@@ -267,35 +294,49 @@ a {
 }
 
 .carte {
-    height: 200px;
-    width: 31%;
+    height: 194px;
+    width: 241px;
     border-radius: 15px;
     background-color: white;
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .carte img {
     display: block;
     object-fit: cover;
     height: 110px;
+    border-radius: 15px 15px 0 0;
 }
 
 .zonetexte {
     background-color: white;
     overflow: hidden;
     height: 200px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
     padding-left: 15px;
     padding-top: 5px;
 }
 
 #hébergements aside {
     height: 625px;
-    width: 31.6%;
+    width: 420px;
+}
+
+.affichez {
+    margin-bottom: 44px;
+    margin-left: 44px;
 }
 
 /*Populaire*/
+
+#populaires {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-right: 50px;
+    padding: 0 40px 0 40px;
+}
 
 .bloccartepopulaire {
     display: flex;
@@ -308,8 +349,8 @@ a {
 
 .cartecolonne {
     position: relative;
-    width: 100%;
-    height: 145px;
+    width: 339px;
+    height: 139px;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -320,6 +361,7 @@ a {
 .cartecolonne img {
     display: block;
     object-fit: cover;
+    border-radius: 15px 0 0 15px;
     object-position: center;
     width: 36%;
 }
@@ -345,6 +387,10 @@ a {
 
 .greystars {
     color: #d1cfcf;
+}
+
+.titrepop {
+    display: flex;
 }
 
 /*Activités*/
@@ -378,12 +424,6 @@ a {
     width: 50%;
 }
 
-.colonne {
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-}
-
 .colonne, .colonne2, .colonne3, .colonne4, .Fort, .Iles, .dame, .parc {
     border-radius: 20px;
     display: flex;
@@ -394,10 +434,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.colonne, .colonne2, .colonne3, .colonne4 {
-    width: 50%;
 }
 
 .Fort, .parc {
@@ -434,6 +470,29 @@ a {
     align-items: center;
     height: 55px;
     border-radius: 0 0 20px 20px;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.colonne, .colonne2, .colonne3, .colonne4 {
+    width: 302px;
+    height: 445px;
+}
+
+.colonne {
+    margin-left: 50px;
+}
+
+.colonne2 {
+    margin-right: 22px;
+}
+
+.colonne3 {
+    margin-left: 21px;
+}
+
+.colonne4 {
+    margin-right: 53px;
 }
 
 /*Footer*/
