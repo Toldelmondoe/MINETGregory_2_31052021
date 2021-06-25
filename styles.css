@@ -274,9 +274,13 @@ a {
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-left: 50px;
-    padding: 0 40px 0 40px;
+    margin-right: 20px;
+    padding: 47px 40px 0 40px;
 }
 
+#hébergements h2 {
+    margin-bottom: 33px;
+}
 .bloccartehébergement {
     width: 100%;
     height: 425px;
@@ -335,8 +339,15 @@ a {
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 50px;
-    padding: 0 40px 0 40px;
+    padding: 46px 40px 0 40px;
+    margin-left: 20px;
 }
+
+#populaires h2 {
+    margin-bottom: 36px;
+}
+
+
 
 .bloccartepopulaire {
     display: flex;
@@ -391,6 +402,7 @@ a {
 
 .titrepop {
     display: flex;
+    justify-content: space-between;
 }
 
 /*Activités*/
@@ -399,10 +411,15 @@ a {
     height: 600px;
     max-width: 1440px;
     background-color: rgb(146, 92, 92);
+    margin-top: 65px;
 }
 
 #lesactivités img {
     border-radius: 20px 20px 0 0;
+}
+
+#lesactivités h2 {
+    margin-left: 50px;
 }
 
 .blocactivités {
@@ -410,6 +427,7 @@ a {
     height: 446px;
     display: flex;
     justify-content: space-between;
+    margin-top: 28px;
 }
 
 .blocactivités1 {
