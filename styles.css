@@ -1,6 +1,10 @@
 /* GENERAL */
-* {
+h1, h2, h3, h4, h5, h6, p, a, i, li, strong {
     font-family: "Raleway";
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
 }
 
 .pointer {
@@ -20,7 +24,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(235, 217, 217);
+    background-color: rgb(175, 216, 233);
 }
 
 main {
@@ -37,10 +41,6 @@ footer {
     height: 218px;
     display: flex;
     justify-content: center;
-}
-
-h2 h3 {
-    font-weight: bold;
 }
 
 /* NAV */
@@ -66,11 +66,10 @@ h2 h3 {
     color: black;
 }
 
-
 nav {
-    display: flex;
     position: absolute;
     right: 165px;
+    top: 55px;
 }
 
 a {
@@ -78,36 +77,20 @@ a {
     color: black;
 }
 
-.navigation1 {
-    padding: 45px 20px 0px 20px;
+.navigation {
+    padding-top: 52px;
     border-top: 2px solid transparent;
-    height: 110px;
     margin-right: 70px;
     text-align: center;
 }
 
-.navigation2 {
-    padding: 45px 20px 0px 20px;
-    border-top: 2px solid transparent;
-    height: 110px;
-    text-align: center;
-}
-
-.navigation1:hover {
+.navigation:hover {
     border-top: 2px solid #0065FC;
-}
-
-.navigation2:hover {
-    border-top: 2px solid #0065FC;
-}
-
-.navigation:hover > .navigation1 {
     color: #0065FC;
 }
 
-
 .inscription {
-    padding: 35px 0px 0px 0px;
+    margin-top: 35px;
     width: 120px;
     height: 15px;
     text-align: right;
@@ -115,11 +98,74 @@ a {
     color: #0065FC;
     margin-right: 78px;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .inscription:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: transform 0.5s;
+}
+
+/*Titre*/
+
+.title {
+    padding-top: 43px;
+    margin-left: 55px;
+}
+
+/*Rechercher*/
+
+#search {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;    
+    border: 1px solid #F2F2F2;
+    width: 420px;
+    height: 51px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-left: 44px;
+    background-color: white;
+}
+
+.fa-map-marker-alt {
+    position: absolute;
+    left: 0;
+    height: 51px;
+    width: 52px;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    display: block;
+    margin: 0px 120px 0px 45px;
+    height: 45px;
+    width: 235px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-left: 10px;
+    border: none;
+}
+
+.bouton {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    width: 134px;
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: white;
 }
 
 /*info*/
@@ -128,14 +174,15 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 24px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-left: 59px;
+    margin-top: 35px;
 }
 
 .fa-info {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     display: flex;
     color: #0065FC;
     background-color: white;
@@ -143,6 +190,10 @@ a {
     align-items: center;
     border: 2px solid #F2F2F2;
     border-radius: 50%;
+}
+
+#info p {
+    margin-left: 12px;
 }
 
 /*Filtres*/
@@ -153,6 +204,7 @@ a {
     width: 100%;
     height: 50px;
     margin-top: 30px;
+    margin-left: 63px;
 }
 
 .filtre {
@@ -265,7 +317,7 @@ a {
 #leshébergements {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 96px;
 }
 
 #hébergements {
@@ -305,6 +357,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    cursor: pointer;
 }
 
 .carte img {
@@ -328,9 +381,12 @@ a {
     width: 420px;
 }
 
-.affichez {
-    margin-bottom: 44px;
-    margin-left: 44px;
+#leshébergements h3 {
+    cursor: pointer;
+    display: block;
+    height: 20px;
+    margin-top: 40px;
+    width: 101px;
 }
 
 /*Populaire*/
@@ -346,8 +402,6 @@ a {
 #populaires h2 {
     margin-bottom: 36px;
 }
-
-
 
 .bloccartepopulaire {
     display: flex;
@@ -367,6 +421,7 @@ a {
     display: flex;
     flex-direction: row;
     padding: 5px;
+    cursor: pointer;
 }
 
 .cartecolonne img {
@@ -405,12 +460,13 @@ a {
     justify-content: space-between;
 }
 
+
 /*Activités*/
 
 #lesactivités {
     height: 600px;
     max-width: 1440px;
-    background-color: rgb(146, 92, 92);
+    background-color: white;
     margin-top: 65px;
 }
 
@@ -456,10 +512,12 @@ a {
 
 .Fort, .parc {
     height: 235px;
+    cursor: pointer;
 }
 
 .Iles, .dame {
-    height: 165px
+    height: 165px;
+    cursor: pointer;
 }
 
 .colonne img, .colonne2 img, .colonne3 img, .colonne4 img {
@@ -499,6 +557,7 @@ a {
 
 .colonne {
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .colonne2 {
@@ -507,6 +566,7 @@ a {
 
 .colonne3 {
     margin-left: 21px;
+    cursor: pointer;
 }
 
 .colonne4 {

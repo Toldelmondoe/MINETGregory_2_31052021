@@ -10,24 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
 
+    <!--Icons from Font Awesome-->
+
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/0943c6738e.js" crossorigin="anonymous"></script>
+
     <!-- Feuille de style-->
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <!--Icons from Font Awesome-->
-
-    <script src="https://kit.fontawesome.com/0943c6738e.js" crossorigin="anonymous"></script>
+    
     <title>Reservia</title>
 </head>
 <body>
+    
     <header>
         <div id="logo">
             <img src="images\logo\Reservia@3x.png" alt="logo de Reservia" />
             <div class="inscription"><strong>S'inscrire</strong></a></div>     
         </div>
-        <nav class="navigation">
-            <a class="navigation1" href="#leshébergements">Hébergements</a>
-            <a class="navigation2" href="#lesactivités">Activités</a>
+        <nav>
+            <a class="navigation" href="#leshébergements">Hébergements</a>
+            <a class="navigation" href="#lesactivités">Activités</a>
         </nav>
     </header>
     <main>
@@ -40,8 +44,14 @@
 
             <!--Bouton Recherche-->
 
-            <div class="search">
+            <div id="search">
                 <i class="fas fa-map-marker-alt"></i>
+                <form>
+                    <input id="champdesaisie" type="search" name="champdesasie" placeholder="Marseille, France" />
+                </form>
+                <div class="bouton">
+                    <p class="rechercher">Rechercher</p>
+                </div>
             </div> 
 
             <!--les filtres-->
@@ -73,7 +83,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
                             <div class="zonetexte">
-                                <h3>Auberge la Cannebière</h3>
+                                <h4>Auberge la Cannebière</h4>
                                 <p>Nuit à partir de <span class="prix">25€</span></p>
                                 <div>
                                     <i class="fas fa-star bluestars"></i>
@@ -87,7 +97,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
                             <div class="zonetexte">
-                                <h3>Hôtel du port</h3>
+                                <h4>Hôtel du port</h4>
                                 <p>Nuit à partir de 52<span class="prix">€</span></p>
                                 <div>  
                                     <i class="fas fa-star bluestars"></i>
@@ -101,7 +111,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" />
                             <div class="zonetexte">
-                                <h3>Hôtel Les mouettes</h3>
+                                <h4>Hôtel Les mouettes</h4>
                                 <p>Nuit à partir de 76<span class="prix">€</span></p>
                                 <div>
                                     <i class="fas fa-star bluestars"></i>
@@ -117,7 +127,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
                             <div class="zonetexte">
-                                <h3>Hôtel de la mer</h3>
+                                <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de 46<span class="prix">€</span></p>
                                 <div>
                                     <i class="fas fa-star bluestars"></i>
@@ -131,7 +141,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
                             <div class="zonetexte">
-                                <h3>Auberge Le Panier</h3>
+                                <h4>Auberge Le Panier</h4>
                                 <p>Nuit à partir de <span class="prix">23€</span></p>
                                 <div>
                                     <i class="fas fa-star bluestars"></i>
@@ -145,7 +155,7 @@
                         <div class="carte">
                             <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
                             <div class="zonetexte">
-                                <h3>Hôtel chez Amina</h3>
+                                <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de 96<span class="prix">€</span></p>
                                 <div>
                                     <i class="fas fa-star bluestars"></i>
@@ -169,7 +179,7 @@
                         <div class="cartecolonne">
                             <img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" />
                             <div class="zonetexte2">
-                                <h3>Hôtel Le soleil du matin</h3>
+                                <h4>Hôtel Le soleil du matin</h4>
                                 <p>Nuit à partir de 128<span class="prix">€</span></p>
                                 <div class="starspop">
                                     <i class="fas fa-star bluestars"></i>
@@ -183,7 +193,7 @@
                         <div class="cartecolonne">
                             <img src="images\hebergements\4_small\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" />
                             <div class="zonetexte2">
-                                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                                <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                 <p>Nuit à partir de 71<span class="prix">€</span></p>
                                 <div class="starspop">
                                     <i class="fas fa-star bluestars"></i>
@@ -197,7 +207,7 @@
                         <div class="cartecolonne">
                             <img src="images\hebergements\4_small\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtal tout bleu et blanc" />
                             <div class="zonetexte2">
-                                <h3>Hôtel Tout bleu et Blanc</h3>
+                                <h4>Hôtel Tout bleu et Blanc</h4>
                                 <p>Nuit à partir de 68<span class="prix">€</span></p>
                                 <div>
                                     <div class="starspop">
