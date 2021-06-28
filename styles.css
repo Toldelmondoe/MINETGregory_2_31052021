@@ -4,7 +4,20 @@ h1, h2, h3, h4, h5, h6, p, a, i, li, strong {
 }
 
 h1, h2, h3, h4 {
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 1.29em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 0.92em;
 }
 
 .pointer {
@@ -24,7 +37,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(175, 216, 233);
+    background-color: white;
 }
 
 main {
@@ -113,6 +126,11 @@ a {
     margin-left: 55px;
 }
 
+.title p {
+    margin-top: 16px;
+    font-size: 0.95em;
+}
+
 /*Rechercher*/
 
 #search {
@@ -146,7 +164,7 @@ input {
     margin: 0px 120px 0px 45px;
     height: 45px;
     width: 235px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     padding-left: 10px;
     border: none;
@@ -194,6 +212,7 @@ input {
 
 #info p {
     margin-left: 12px;
+    font-size: 0.94em;
 }
 
 /*Filtres*/
@@ -333,6 +352,12 @@ input {
 #hébergements h2 {
     margin-top: 50px;
 }
+
+.fa-star {
+    font-size: 0.7em;
+    letter-spacing: -3px;
+}
+
 .bloccartehébergement {
     width: 100%;
     height: 425px;
@@ -376,11 +401,19 @@ input {
 
 .zonetexte {
     background-color: white;
-    overflow: hidden;
     height: 200px;
     border-radius: 0 0 15px 15px;
-    padding-left: 15px;
+    padding-left: 17px;
     padding-top: 5px;
+}
+
+.zonetexte p {
+    margin-bottom: 11px;
+    font-size: 0.85em;
+}
+
+.zonetexte h4 {
+    margin-bottom: 11px;
 }
 
 #hébergements aside {
@@ -402,12 +435,12 @@ input {
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 50px;
-    padding: 46px 40px 0 40px;
+    padding: 46px 40px 34px 40px;
     margin-left: 20px;
 }
 
 #populaires h2 {
-    margin-bottom: 36px;
+    margin-bottom: 31px;
 }
 
 .bloccartepopulaire {
@@ -415,14 +448,14 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
-    height: 491px;
+    height: 498px;
     width: 100%;
 }
 
 .cartecolonne {
     position: relative;
-    width: 339px;
-    height: 139px;
+    width: 333px;
+    height: 133px;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -442,13 +475,20 @@ input {
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     object-position: center;
-    width: 36%;
+    width: 127px;
 }
 
 .zonetexte2 {
-    padding: 0px 7% 0px 7%;
-    width: 62%;
-    overflow: hidden;
+    padding: 14px 21px 14px 21px;
+    width: 206px;
+}
+
+.cartecolonne p {
+    font-size: 0.85em;
+}
+
+.cartecolonne h4 {
+    margin-bottom: 10px;
 }
 
 .starspop {
@@ -637,8 +677,23 @@ input {
 
 .sizeBlocFooter {
     height: 115px;
+    margin-top: 49px;
 }
 
-.margeRightFooter {
-    margin-right: 368px;
+.sizeBlocFooter h3 {
+    margin-bottom: 27px;
+}
+
+.sizeBlocFooter p {
+    margin-bottom: 22px;
+    font-size: 0.94em;
+}
+
+.apropos {
+    margin-left: 50px;
+    margin-right: 228px;
+}
+
+.noshebergements {
+    margin-right: 293px;
 }
