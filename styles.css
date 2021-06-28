@@ -19,7 +19,7 @@ body {
 header {
     position: relative;
     max-width: 1440px;
-    height: 89px;
+    height: 131px;
     margin: 0 auto 0 auto;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ header {
 
 main {
     max-width: 1440px;
-    height: 1577px;
+    height: 1535px;
     margin: 0 auto 0 auto;
     background-color: white;
     position: relative;
@@ -50,10 +50,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 1440px;
+    height: 131px;
 }
 
 #logo img {
-    padding-top: 48px;
+    padding-top: 11px;
     margin-left: 55px;
     height: 46px;
     cursor: pointer;
@@ -68,8 +69,8 @@ footer {
 
 nav {
     position: absolute;
-    right: 165px;
-    top: 55px;
+    right: 155px;
+    top: 53px;
 }
 
 a {
@@ -78,9 +79,9 @@ a {
 }
 
 .navigation {
-    padding-top: 52px;
+    padding-top: 50px;
     border-top: 2px solid transparent;
-    margin-right: 70px;
+    margin-right: 66px;
     text-align: center;
 }
 
@@ -90,7 +91,7 @@ a {
 }
 
 .inscription {
-    margin-top: 35px;
+    margin-top: -11px;
     width: 120px;
     height: 15px;
     text-align: right;
@@ -109,7 +110,6 @@ a {
 /*Titre*/
 
 .title {
-    padding-top: 43px;
     margin-left: 55px;
 }
 
@@ -125,7 +125,7 @@ a {
     height: 51px;
     border-radius: 15px;
     margin-top: 25px;
-    margin-left: 44px;
+    margin-left: 53px;
     background-color: white;
 }
 
@@ -254,7 +254,7 @@ input {
 
 .espfiltre {
     padding-left: 13px;
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: 900;
 }
 
@@ -327,11 +327,11 @@ input {
     border-radius: 15px;
     margin-left: 50px;
     margin-right: 20px;
-    padding: 47px 40px 0 40px;
+    padding: 0px 40px 0 40px;
 }
 
 #hébergements h2 {
-    margin-bottom: 33px;
+    margin-top: 50px;
 }
 .bloccartehébergement {
     width: 100%;
@@ -340,6 +340,7 @@ input {
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .carteligne {
@@ -358,6 +359,12 @@ input {
     flex-direction: column;
     padding: 5px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
 }
 
 .carte img {
@@ -422,6 +429,12 @@ input {
     flex-direction: row;
     padding: 5px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cartecolonne:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
 }
 
 .cartecolonne img {
@@ -464,7 +477,7 @@ input {
 /*Activités*/
 
 #lesactivités {
-    height: 600px;
+    height: 520px;
     max-width: 1440px;
     background-color: white;
     margin-top: 65px;
@@ -513,11 +526,38 @@ input {
 .Fort, .parc {
     height: 235px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .Iles, .dame {
     height: 165px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.dame:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.colonne3:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.colonne:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.Iles:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.parc:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+.Fort:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
 }
 
 .colonne img, .colonne2 img, .colonne3 img, .colonne4 img {
@@ -558,6 +598,7 @@ input {
 .colonne {
     margin-left: 50px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .colonne2 {
@@ -567,6 +608,7 @@ input {
 .colonne3 {
     margin-left: 21px;
     cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .colonne4 {
