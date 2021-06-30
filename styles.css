@@ -1,4 +1,4 @@
-/* GENERAL */
+/*----GENERAL----*/
 h1, h2, h3, h4, h5, h6, p, a, i, li, strong {
     font-family: "Raleway";
 }
@@ -9,7 +9,6 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 1.29em;
-    font-weight: 900;
 }
 
 h2 {
@@ -18,10 +17,6 @@ h2 {
 
 h4 {
     font-size: 0.92em;
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 body {
@@ -56,7 +51,8 @@ footer {
     justify-content: center;
 }
 
-/* NAV */
+/*----Header----*/
+/*----Logo----*/
 
 #logo {
     display: flex;
@@ -73,12 +69,7 @@ footer {
     cursor: pointer;
 }
 
-.colorLink13 {
-    color: #0065FC;
-}
-.colorLink2 {
-    color: black;
-}
+/*----Nav----*/
 
 nav {
     position: absolute;
@@ -98,11 +89,6 @@ a {
     text-align: center;
 }
 
-.navigation:hover {
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
-}
-
 .inscription {
     margin-top: -11px;
     width: 120px;
@@ -115,12 +101,8 @@ a {
     font-weight: bold;
 }
 
-.inscription:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-
-/*Titre*/
+/*----Main----*/
+/*----Titre----*/
 
 .title {
     margin-left: 55px;
@@ -131,7 +113,7 @@ a {
     font-size: 0.95em;
 }
 
-/*Rechercher*/
+/*----Rechercher----*/
 
 #search {
     display: flex;
@@ -186,7 +168,7 @@ input {
     color: white;
 }
 
-/*info*/
+/*----info----*/
 
 #info {
     position: absolute;
@@ -215,7 +197,7 @@ input {
     font-size: 0.94em;
 }
 
-/*Filtres*/
+/*----Filtres----*/
 
 .filtres {
     display: flex;
@@ -289,49 +271,15 @@ input {
     margin-left: -3px;
 }
 
-.list1:hover {
+.bluestars {
     color: #0065FC;
-    background-color: #F2F2F2;
 }
 
-.list2:hover {
-    color: #0065FC;
-    background-color: #F2F2F2;
+.greystars {
+    color: #d1cfcf;
 }
 
-.list3:hover {
-    color: #0065FC;
-    background-color: #F2F2F2;
-}
-
-.list4:hover {
-    color: #0065FC;
-    background-color: #F2F2F2;
-}
-
-.list1:hover > #money {
-    color: #DEEBFF;
-    background-color: #0065FC;
-}
-
-.list2:hover > #child {
-    color: #DEEBFF;
-    background-color: #0065FC;
-}
-
-.list3:hover > #heart {
-    color: #DEEBFF;
-    background-color: #0065FC;
-}
-
-.list4:hover > #dog {
-    color: #DEEBFF;
-    background-color: #0065FC;
-}
-
-
-
-/*Hébergements*/
+/*----Hébergements----*/
 
 #leshébergements {
     display: flex;
@@ -387,11 +335,6 @@ input {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.carte:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-
 .carte img {
     display: block;
     object-fit: cover;
@@ -416,6 +359,8 @@ input {
     margin-bottom: 11px;
 }
 
+/*----Populaire----*/
+
 #hébergements aside {
     height: 625px;
     width: 420px;
@@ -428,8 +373,6 @@ input {
     margin-top: 40px;
     width: 101px;
 }
-
-/*Populaire*/
 
 #populaires {
     background-color: #F2F2F2;
@@ -465,11 +408,6 @@ input {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.cartecolonne:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-
 .cartecolonne img {
     display: block;
     object-fit: cover;
@@ -500,21 +438,12 @@ input {
     font-weight: bold;
 }
 
-.bluestars {
-    color: #0065FC;
-}
-
-.greystars {
-    color: #d1cfcf;
-}
-
 .titrepop {
     display: flex;
     justify-content: space-between;
 }
 
-
-/*Activités*/
+/*----Activités----*/
 
 #lesactivités {
     height: 520px;
@@ -575,31 +504,6 @@ input {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.dame:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-.colonne3:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-.colonne:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-.Iles:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-.parc:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-.Fort:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s;
-}
-
 .colonne img, .colonne2 img, .colonne3 img, .colonne4 img {
     width: 100%;
     display: block;
@@ -655,7 +559,7 @@ input {
     margin-right: 53px;
 }
 
-/*Footer*/
+/*----Footer----*/
 
 #pieddepage {
     background-color: #F2F2F2;
@@ -697,3 +601,98 @@ input {
 .noshebergements {
     margin-right: 293px;
 }
+
+/*----Animation----*/
+
+.navigation:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.inscription:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.list1:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list2:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list3:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list4:hover {
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+
+.list1:hover > #money {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list2:hover > #child {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list3:hover > #heart {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.list4:hover > #dog {
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.cartecolonne:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.dame:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.colonne3:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.colonne:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.Iles:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.parc:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+.Fort:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+}
+
+/*----Responsive----*/
+
