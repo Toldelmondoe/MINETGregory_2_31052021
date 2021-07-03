@@ -15,6 +15,10 @@ h2 {
     font-size: 1.25em;
 }
 
+h3 {
+    font-size: 1.1em;
+}
+
 h4 {
     font-size: 0.92em;
 }
@@ -287,18 +291,18 @@ input {
     padding-top: 96px;
 }
 
-#hébergements {
-    height: 625px;
-    width: 878px;
+.blocgris {
     background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#hébergements {
+    height: 550px;
+    width: 878px;
     border-radius: 15px;
     margin-left: 50px;
     margin-right: 20px;
-    padding: 0px 40px 0 40px;
-}
-
-#hébergements h2 {
-    margin-top: 50px;
 }
 
 .fa-star {
@@ -359,26 +363,25 @@ input {
     margin-bottom: 11px;
 }
 
-/*----Populaire----*/
-
-#hébergements aside {
-    height: 625px;
-    width: 420px;
-}
-
 #leshébergements h3 {
     cursor: pointer;
     display: block;
     height: 20px;
-    margin-top: 40px;
-    width: 101px;
+    margin-top: 45px;
+    width: 121px;
+}
+
+/*----Populaire----*/
+
+#hébergements aside {
+    height: 550px;
+    width: 420px;
 }
 
 #populaires {
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 50px;
-    padding: 46px 40px 34px 40px;
     margin-left: 20px;
 }
 
@@ -603,6 +606,7 @@ input {
 }
 
 /*----Animation----*/
+/*--Header--*/
 
 .navigation:hover {
     border-top: 2px solid #0065FC;
@@ -613,6 +617,9 @@ input {
     transform: scale(1.1);
     transition: transform 0.5s;
 }
+/*--Main--*/
+
+/*--Filtre--*/
 
 .list1:hover {
     color: #0065FC;
@@ -654,15 +661,27 @@ input {
     background-color: #0065FC;
 }
 
+/*--Hébergement--*/
+
 .carte:hover {
     transform: scale(1.05);
     transition: transform 0.5s;
 }
 
+#hébergements h3:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    color: #0065fc;
+}
+
+/*--Populaire--*/
+
 .cartecolonne:hover {
     transform: scale(1.05);
     transition: transform 0.5s;
 }
+
+/*--Activités--*/
 
 .dame:hover {
     transform: scale(1.05);
@@ -694,5 +713,196 @@ input {
     transition: transform 0.5s;
 }
 
+/*--Footer--*/
+
+.footergnrl p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /*----Responsive----*/
+
+
+/* ----  RRESPONSIVE DESIGN ---- */
+
+@media screen and (max-width: 1180px) {
+    
+    main {
+        height: 2630px;
+    }
+
+    #leshébergements {
+        height: 1250px;
+        flex-direction: column-reverse;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #leshébergements section {
+        height: 625px;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+
+    .carteligne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .blocgris {
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        padding: 40px 3.8%;
+    }
+
+    /* -- Cartes herbergements -- */
+
+    .bloccartehébergement {
+        width: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    #hébergements {
+        margin: 0;
+    }
+    
+    #hébergements h2 {
+        margin: 0 0 0 40px;
+    }
+    
+    #leshébergements h3 {
+        cursor: pointer;
+        display: block;
+        height: 20px;
+        margin: 60px 0 0 40px;
+        width: 121px;
+    }
+
+    #leshébergements aside {
+        height: 625px;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        margin-right: 0px;
+    }
+
+    .bloccartepopulaire img {
+        width: 45%;
+    }
+
+    #populaires {
+        margin: 0;
+    }
+
+    .carte {
+        margin: 1.5% 3.8% 1.5% 3.5%;
+    }
+
+    .cartecolonne {
+        position: relative;
+        width: 100%;
+        height: 133px;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    #lesactivités {
+        height: 1022px;
+        width: 100%;
+    }
+        
+    .blocactivités {
+        height: 938px;
+        flex-direction: column;
+    }
+        
+    .blocactivités1, .blocactivités2 {
+        align-content: space-between;
+        width: 100%;
+    }
+    
+    .colonne, .colonne2 {
+        width: 47.5%;
+        margin: 1.5%;
+    }
+    
+    .colonne2 {
+        align-content: space-between;
+    }
+    
+    .Fort {
+        height: 200px;
+    }
+    
+    .Fort img {
+        height: 145px;
+    }
+    
+    .Iles {
+        height: 200px;
+    }
+    
+    .Iles img {
+        height: 145px;
+    }
+
+    .colonne3, .colonne4 {
+        width: 47.5%;
+        margin: 1.5%;
+    }
+
+    .colonne, .colonne3 {
+        margin-left: 40px;
+    }
+
+    .colonne2, .colonne4 {
+        margin-right: 40px;
+    }
+
+    .colonne4 {
+        align-content: space-between;
+    }
+
+    .dame {
+        height: 200px;
+    }
+    
+    .dame img {
+        height: 145px;
+    }
+    
+    .parc {
+        height: 200px;
+    }
+    
+    .parc img {
+        height: 145px;
+    }
+
+    #pieddepage {
+        height: 218px;
+    }
+    .sizeBlocFooter {
+        margin-top: 50px;
+    }
+
+    .parc:hover , .dame:hover , .Iles:hover , .Fort:hover , .colonne:hover , .colonne3:hover {
+        transform: none;
+    }
+
+    .titreactivité:hover {
+        background-color: #DEEBFF;
+        color: #0065fc;
+    }
+}
 
