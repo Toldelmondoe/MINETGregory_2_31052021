@@ -28,6 +28,10 @@ body {
     font-size: 17px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 header {
     position: relative;
     max-width: 1440px;
@@ -288,7 +292,7 @@ input {
 #leshébergements {
     display: flex;
     justify-content: space-between;
-    padding-top: 96px;
+    margin-top: 96px;
 }
 
 .blocgris {
@@ -299,7 +303,7 @@ input {
 
 #hébergements {
     height: 550px;
-    width: 878px;
+    width: 66.6%;
     border-radius: 15px;
     margin-left: 50px;
     margin-right: 20px;
@@ -329,7 +333,7 @@ input {
 
 .carte {
     height: 194px;
-    width: 241px;
+    width: 30%;
     border-radius: 15px;
     background-color: white;
     display: flex;
@@ -375,7 +379,7 @@ input {
 
 #hébergements aside {
     height: 550px;
-    width: 420px;
+    width: 33.3%;
 }
 
 #populaires {
@@ -538,27 +542,31 @@ input {
 }
 
 .colonne, .colonne2, .colonne3, .colonne4 {
-    width: 302px;
+    width: 48%;
     height: 445px;
 }
 
 .colonne {
     margin-left: 50px;
+    margin-right:4%;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .colonne2 {
-    margin-right: 22px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .colonne3 {
-    margin-left: 21px;
+    margin-left: 4%;
+    margin-right: 4%;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .colonne4 {
+    margin-left: 4%;
     margin-right: 53px;
 }
 
@@ -582,16 +590,16 @@ input {
     align-content: flex-start;
 }
 
-.sizeBlocFooter {
+.sizeBlocFooter1 , .sizeBlocFooter2 , .sizeBlocFooter3 {
     height: 115px;
     margin-top: 49px;
 }
 
-.sizeBlocFooter h3 {
+.sizeBlocFooter1 h3 , .sizeBlocFooter2 h3 , .sizeBlocFooter3 h3{
     margin-bottom: 27px;
 }
 
-.sizeBlocFooter p {
+.sizeBlocFooter1 p , .sizeBlocFooter2 p , .sizeBlocFooter3 p {
     margin-bottom: 22px;
     font-size: 0.94em;
 }
@@ -727,6 +735,10 @@ input {
 
 @media screen and (max-width: 1180px) {
     
+    body {
+        max-width: 1180px;
+    }
+
     main {
         height: 2630px;
     }
@@ -792,7 +804,7 @@ input {
     }
 
     .bloccartepopulaire img {
-        width: 45%;
+        width: 38.65%;
     }
 
     #populaires {
@@ -800,9 +812,21 @@ input {
     }
 
     .carte {
-        margin: 1.5% 3.8% 1.5% 3.5%;
+        margin: 0 1.5% 0 1.5%;
+        width: 31%;
     }
-
+    .cartecolonne {
+        position: relative;
+        width: 333px;
+        height: 133px;
+        border-radius: 15px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    }
     .cartecolonne {
         position: relative;
         width: 100%;
@@ -811,7 +835,7 @@ input {
         background-color: white;
         display: flex;
         flex-direction: row;
-        padding: 0;
+        padding: 5px;
         cursor: pointer;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     }
@@ -892,8 +916,27 @@ input {
     #pieddepage {
         height: 218px;
     }
-    .sizeBlocFooter {
+
+    #pieddepage .sizeBlocFooter1 , #pieddepage .sizeBlocFooter2 , #pieddepage .sizeBlocFooter3 {
+        width: 25%;
+    }
+
+    .sizeBlocFooter1 {
         margin-top: 50px;
+        margin-left: 50px;
+        height: 115px;
+        margin-right: 4%;
+    }
+
+    .sizeBlocFooter2 {
+        margin-top: 50px;
+        height: 115px;
+        margin-right: 4%;
+    }
+
+    .sizeBlocFooter3 {
+        margin-top: 50px;
+        height: 115px;
     }
 
     .parc:hover , .dame:hover , .Iles:hover , .Fort:hover , .colonne:hover , .colonne3:hover {
@@ -903,6 +946,239 @@ input {
     .titreactivité:hover {
         background-color: #DEEBFF;
         color: #0065fc;
+    }  
+}
+
+@media screen and (max-width: 1010px) {
+
+    main {
+        height: 2690px;
+    }
+
+    .filtres {
+        display: initial;
+        height: 100px;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .filtres h3 {
+        margin: 36px 0 19px 50px;
+    }
+
+    .filtre {
+        height: 55px;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+
+    main {
+        height: 2760px;
+    }
+
+    .filtres {
+        display: inline-block;
+        height: 190px;
+    }
+
+
+    .filtre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list1 , .list2 , .list3 {
+        margin-bottom: 12px;
+    }
+
+    #info {
+        margin-top: 30px;
+    }
+
+    .cartecolonne:hover {
+        background-color: #DEEBFF;
+        transform: none;
     }
 }
 
+@media screen and (max-width: 810px) {
+
+    main {
+        height: 2750px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #logo img {
+        padding-top: 28px;
+        margin-left: 20px;
+        height: 46px;
+        cursor: pointer;
+    }
+
+    .inscription {
+        padding: 57px 0px 0px 0px;
+        height: 70px;
+        width: 120px;
+        margin-right: 20px;
+    }
+
+    nav {
+        display: flex;
+        width: 100%; 
+        position: absolute;
+        left: 0px;
+        top: 100px;
+    }
+
+    .navigation {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        border-top: none;
+        padding-bottom: 15px;
+        border-bottom: solid 4px #F2F2F2;
+    }
+
+    .navigation:hover {
+        border-bottom: solid 4px #0065fc;
+        border-top: transparent;
+    }
+
+    .title {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    #search {
+        margin-left: 20px;
+    }
+
+    .filtres h3 {
+        margin-left: 20px;
+    }
+
+    .filtre {
+        margin-left: 20px;
+    }
+
+    #info {
+        margin-left: 20px;
+    }
+
+    #pieddepage {
+        height: 440px;
+    }
+    
+    .footergnrl {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .sizeBlocFooter1 {
+        
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-right: 15%;
+    }
+
+    .sizeBlocFooter2 {
+        margin: 50px 0 0 0;
+    }
+
+    .sizeBlocFooter3 {
+        position: absolute;
+        top: 3130px;
+        left: 30px;
+    }
+
+    #pieddepage .sizeBlocFooter1 , #pieddepage .sizeBlocFooter2 , #pieddepage .sizeBlocFooter3 {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+    main {
+        height: 4000px;
+    }
+
+    .sizeBlocFooter3 {
+        position: absolute;
+        top: 4380px;
+        left: 30px;
+    }
+    #leshébergements section {
+        position: absolute;
+        top: 1020px;
+        height: 1500px;
+        background-color: white;
+    }
+
+    .carteligne {
+        flex-direction: column;
+    }
+
+    .bloccartehébergement {
+        height: 1315px;
+    }
+
+    .carte {
+        width: 92%;
+        height: 189px;
+        margin: 10px 20px 10px 20px;
+    }
+
+    .carte img {
+        height: 114px;
+    }
+
+    .carte:hover {
+        transform: none;
+    }
+
+    .zonetexte:hover {
+        background-color: #DEEBFF;
+        color: #0065fc;
+    }
+
+    #lesactivités {
+        position: absolute;
+        top: 2465px;
+    }
+
+    #hébergements h2 {
+        margin: 40px 0 0 20px;
+    }
+
+    #leshébergements aside {
+        position: absolute;
+        top: 400px;
+        height: 500px;
+        margin-top: 40px;
+    }
+
+    .bloccartepopulaire {
+        height: 453px;
+    }
+
+    #leshébergements h3 {
+        margin: 30px 0 0 20px;
+    }
+    #lesactivités h2 {
+        margin-left: 20px;
+    }
+}
