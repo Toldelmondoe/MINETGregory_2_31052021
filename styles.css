@@ -176,6 +176,10 @@ input {
     color: white;
 }
 
+.loupe {
+    display: none;
+}
+
 /*----info----*/
 
 #info {
@@ -730,9 +734,6 @@ input {
 
 /*----Responsive----*/
 
-
-/* ----  RRESPONSIVE DESIGN ---- */
-
 @media screen and (max-width: 1180px) {
     
     body {
@@ -761,7 +762,6 @@ input {
 
     .carteligne {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
@@ -1113,12 +1113,12 @@ input {
 @media screen and (max-width: 700px) {
     
     main {
-        height: 4000px;
+        height: 3905px;
     }
 
     .sizeBlocFooter3 {
         position: absolute;
-        top: 4380px;
+        top: 4280px;
         left: 30px;
     }
     #leshébergements section {
@@ -1158,6 +1158,8 @@ input {
     #lesactivités {
         position: absolute;
         top: 2465px;
+        max-width: 700px;
+        height: 1325px;
     }
 
     #hébergements h2 {
@@ -1180,5 +1182,142 @@ input {
     }
     #lesactivités h2 {
         margin-left: 20px;
+    }
+
+    .blocactivités {
+        height: 1272px;
+    }
+    
+    .blocactivités1 , .blocactivités2 {
+        flex-direction: column;
+        height: 629px;
+    }
+
+    .colonne , .colonne2 , .colonne3 , .colonne4 , .Fort , .Iles , .dame, .parc {
+        width: 95%;
+        height: 190px;
+    }
+
+    .colonne , .colonne3 {
+        margin: 12px 20px 12px 20px;
+    }
+
+    .colonne2 , .colonne4 {
+        width: 100%;
+        height: 410px;
+        margin: 12px 21px 12px 20px;
+    }
+
+    .Fort {
+        margin: 0px 20px 12px 0px;
+    }
+
+    .Iles {
+        margin: 12px 20px 0px 0px;
+    }
+    
+    .dame {
+        margin: 0px 20px 12px 0px;
+    }
+    
+    .parc {
+        margin: 12px 20px 0px 0px;
+    }
+
+    .colonne img, .colonne2 img, .colonne3 img, .colonne4 img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 134px;
+    }
+    
+    .Fort img, .parc img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 134px;
+    }
+    
+    .Iles img, .dame img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 134px;
+    }
+}
+
+@media screen and (max-width: 643px) {
+    
+    #pieddepage {
+        height: 557px;
+    }
+
+    #pieddepage .sizeBlocFooter1 , #pieddepage .sizeBlocFooter2 , #pieddepage .sizeBlocFooter3{
+        width: 70%;
+        height: 140px;
+    }
+
+    .sizeBlocFooter2 {
+        position: absolute;
+        top: 4260px;
+        left: 30px;
+    }
+
+    .sizeBlocFooter3 {
+        position: absolute;
+        top: 4425px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 501px) {
+
+    main {
+        height: 3955px;
+    }    
+    
+    .filtres {
+        height: 251px;
+    }
+
+    #leshébergements aside {
+        margin-top: 102px;
+    }
+
+    #leshébergements section {
+        position: absolute;
+        top: 1080px;
+    }
+
+    #lesactivités {
+        position: absolute;
+        top: 2525px;
+    }
+
+    #pieddepage {
+        height: 560px;
+    }
+
+    .sizeBlocFooter2 {
+        position: absolute;
+        top: 4310px;
+        left: 30px;
+    }
+
+    .sizeBlocFooter3 {
+        position: absolute;
+        top: 4475px;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .bouton p {
+        display: none;
+    }
+
+    .loupe {
+        display: block;
     }
 }
