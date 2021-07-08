@@ -606,7 +606,7 @@ input {
 }
 
 .apropos {
-    margin: 0px 228px 0px 50px;
+    margin: 49px 228px 0px 50px;
 }
 
 .noshebergements {
@@ -759,7 +759,7 @@ input {
     .carteligne {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 95%;
     }
     
     .blocgris {
@@ -808,24 +808,13 @@ input {
     }
 
     .carte {
-        margin: 0 1.5% 0 1.5%;
+        margin: 0 1.5% 0 3%;
         width: 31%;
     }
+    
     .cartecolonne {
         position: relative;
-        width: 333px;
-        height: 133px;
-        border-radius: 15px;
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-        cursor: pointer;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    }
-    .cartecolonne {
-        position: relative;
-        width: 100%;
+        width: 95%;
         height: 133px;
         border-radius: 15px;
         background-color: white;
@@ -1071,13 +1060,6 @@ input {
     #pieddepage {
         height: 440px;
     }
-    
-    .footergnrl {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
 
     .sizeBlocFooter1 { 
         margin: 50px 15% 0 30px;
@@ -1174,6 +1156,7 @@ input {
 
     .blocactivités {
         height: 1272px;
+        width: 95%;
     }
     
     .blocactivités1 , .blocactivités2 {
@@ -1297,13 +1280,15 @@ input {
         top: 4475px;
         left: 30px;
     }
+
+    #search {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 450px) {
 
     #search {
-        width: 100%;
-        border: 1px solid #F2F2F2;
         display: inline-flex;
     }
 
