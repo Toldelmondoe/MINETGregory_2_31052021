@@ -1,6 +1,6 @@
 /*----GENERAL----*/
 h1, h2, h3, h4, h5, h6, p, a, i, li, strong {
-    font-family: "Raleway";
+    font-family: "Raleway" , sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -1270,7 +1270,7 @@ input {
     }
 }
 
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 518px) {
 
     main {
         height: 3955px;
@@ -1313,11 +1313,72 @@ input {
 
 @media screen and (max-width: 450px) {
 
+    #search {
+        width: 100%;
+        border: 1px solid #F2F2F2;
+        display: inline-flex;
+    }
+
+    input {
+        display: block;
+        margin: 0px 0px 0px 0px;
+        height: 45px;
+        width: 100%;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+
+    .bouton {
+        height: 51px;
+        width: 51px;
+        margin-right: 40px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
     .bouton p {
         display: none;
     }
 
     .loupe {
         display: block;
+    }
+}
+
+@media screen and (max-width: 411px) {
+
+    main {
+        height: 4025px;
+    } 
+
+    #info {
+        margin-top: 90px;
+    }
+
+    #leshébergements aside {
+        position: absolute;
+        top: 460px;
+        height: 500px;
+    }
+
+    #leshébergements section {
+        position: absolute;
+        top: 1140px;
+    }
+
+    #lesactivités {
+        position: absolute;
+        top: 2585px;
+    }
+
+    .sizeBlocFooter2 {
+        position: absolute;
+        top: 4380px;
+        left: 30px;
+    }
+
+    .sizeBlocFooter3 {
+        position: absolute;
+        top: 4535px;
+        left: 30px;
     }
 }
