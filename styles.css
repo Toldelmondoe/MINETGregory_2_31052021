@@ -28,6 +28,10 @@ body {
     font-size: 17px;
 }
 
+ul {
+    padding-inline-start: 0;
+}
+
 .pointer {
     cursor: pointer;
 }
@@ -187,9 +191,7 @@ input {
     display: flex;
     align-items: center;
     height: 24px;
-    width: 100%;
-    margin-left: 59px;
-    margin-top: 35px;
+    margin: 35px auto 0px 59px;
 }
 
 .fa-info {
@@ -214,10 +216,8 @@ input {
 .filtres {
     display: flex;
     align-items: center;
-    width: 100%;
     height: 50px;
-    margin-top: 30px;
-    margin-left: 63px;
+    margin: 30px 0 0 63px;
 }
 
 .filtre {
@@ -309,8 +309,7 @@ input {
     height: 550px;
     width: 66.6%;
     border-radius: 15px;
-    margin-left: 50px;
-    margin-right: 20px;
+    margin: 0px 20px 0px 50px;
 }
 
 .fa-star {
@@ -358,8 +357,7 @@ input {
     background-color: white;
     height: 200px;
     border-radius: 0 0 15px 15px;
-    padding-left: 17px;
-    padding-top: 5px;
+    padding: 5px 0 0 17px;
 }
 
 .zonetexte p {
@@ -389,8 +387,7 @@ input {
 #populaires {
     background-color: #F2F2F2;
     border-radius: 15px;
-    margin-right: 50px;
-    margin-left: 20px;
+    margin: 0px 50px 0px 20px;
 }
 
 #populaires h2 {
@@ -609,8 +606,7 @@ input {
 }
 
 .apropos {
-    margin-left: 50px;
-    margin-right: 228px;
+    margin: 0px 228px 0px 50px;
 }
 
 .noshebergements {
@@ -922,16 +918,13 @@ input {
     }
 
     .sizeBlocFooter1 {
-        margin-top: 50px;
-        margin-left: 50px;
+        margin: 50px 4% 0 50px;
         height: 115px;
-        margin-right: 4%;
     }
 
     .sizeBlocFooter2 {
-        margin-top: 50px;
+        margin: 50px 4% 0 0;
         height: 115px;
-        margin-right: 4%;
     }
 
     .sizeBlocFooter3 {
@@ -989,7 +982,6 @@ input {
 
 
     .filtre {
-        display: flex;
         flex-wrap: wrap;
     }
 
@@ -1057,8 +1049,7 @@ input {
     }
 
     .title {
-        margin-top: 40px;
-        margin-left: 20px;
+        margin: 40px 0 0 20px;
     }
 
     #search {
@@ -1088,11 +1079,8 @@ input {
         align-content: flex-start;
     }
 
-    .sizeBlocFooter1 {
-        
-        margin-left: 30px;
-        margin-top: 50px;
-        margin-right: 15%;
+    .sizeBlocFooter1 { 
+        margin: 50px 15% 0 30px;
     }
 
     .sizeBlocFooter2 {
@@ -1344,7 +1332,7 @@ input {
     }
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 428px) {
 
     main {
         height: 4025px;
