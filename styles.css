@@ -1329,6 +1329,7 @@ input {
 
     #leshébergements aside {
         position: absolute;
+        width: 90%;
         top: 460px;
         height: 500px;
     }
